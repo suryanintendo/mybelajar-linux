@@ -35,7 +35,7 @@ Sebelum kita memulai belajar __LINUX__, ada baiknya kita mengenali beberapa isti
 
     __GNU/Linux__ merupakan sebuah project program (__open source__), artinya seorang pengguna __LINUX__ diberi hak kebebasan untuk mengembangkan, memodifikasi *__source code__* dari program yang digunakannya.
 
-    Tidak hanya sampai batasan itu, seseorang yang telah mengembangkan program __open source__ dapat mendistribusikan kembali program tersebut. Yang perlu dipahami ketika kita mendistribusikan kembali sebuah program yang __open source__, kita wajib mendistribusikannya kembali sebagai sebuah project __open source__.
+    Tidak hanya sampai batasan itu, seseorang yang telah mengembangkan program __open source__ dapat mendistribusikan kembali program tersebut. Yang perlu dipahami ketika kita mendistribusikan kembali sebuah program yang __open source__, kita diperbolehkan mendistribusikannya kembali sebagai sebuah project __open source__ atau komersil.
 
 
 - ### GNU/GPL
