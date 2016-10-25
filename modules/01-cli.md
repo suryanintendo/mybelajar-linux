@@ -17,10 +17,6 @@
 | __`fg`__       | (*__Foreground__*), melihat daftar program yang sedang berjalan (__suspended__). |
 | __`top`__      | Melihat informasi aplikasi yang sedang berjalan (__Task Manager CLI__).          |
 
-<!-- - __`last`__ - Lorem ipsum dolor sit amet. -->
-<!-- - __`ps`__ - Lorem ipsum dolor sit amet. -->
-<!-- - __`df`__ - Lorem ipsum dolor sit amet. -->
-<!-- - __`du`__ - Lorem ipsum dolor sit amet. -->
 
 ### 1.2. Perintah Dasar
 
