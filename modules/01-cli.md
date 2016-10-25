@@ -7,34 +7,34 @@
 
 ### 1.1. Perintah Informasi
 
-| Keyword        | Keterangan                                                                       |
-|----------------|----------------------------------------------------------------------------------|
-| __`pwd`__      | Melihat __Process Working Directory__ saat sekarang.                             |
-| __`hostname`__ | Melihat hostname / computer name.                                                |
-| __`whoami`__   | Menampilkan user ID dan nama user pengguna.                                      |
-| __`who`__      | Menampilkan informasi user yang telah login.                                     |
-| __`id`__       | Menampilkan informasi user dan group.                                            |
-| __`fg`__       | (*__Foreground__*), melihat daftar program yang sedang berjalan (__suspended__). |
-| __`top`__      | Melihat informasi aplikasi yang sedang berjalan (__Task Manager CLI__).          |
+| Keyword | Keterangan |
+|---------|------------|
+| __`pwd`__ | Melihat __Process Working Directory__ saat sekarang. |
+| __`hostname`__ | Melihat hostname / computer name. |
+| __`whoami`__ | Menampilkan user ID dan nama user pengguna. |
+| __`who`__ | Menampilkan informasi user yang telah login. |
+| __`id`__ | Menampilkan informasi user dan group. |
+| __`fg`__ | (*__Foreground__*), melihat daftar program yang sedang berjalan (__suspended__). |
+| __`top`__ | Melihat informasi aplikasi yang sedang berjalan (__Task Manager CLI__). |
 
 
 ### 1.2. Perintah Dasar
 
-| Keyword     | Keterangan                                                                    |
-|-------------|-------------------------------------------------------------------------------|
-| __`ls`__    | Melihat daftar isi suatu directory.                                           |
-| __`mkdir`__ | Membuat directory atau folder.                                                |
-| __`touch`__ | Membuat file.                                                                 |
-| __`cp`__    | Menggandakan atau menyalin file dan directory                                 |
-| __`mv`__    | Melakukan perubahan nama file atau memindahkan file ke ke lokasi yang berbeda |
-| __`rm`__    | Menghapus file atau folder (`-d`).                                            |
-| __`rmdir`__ | Menghapus directory atau folder.                                              |
-| __`cat`__   | Menggabungkan data files dan menampilkannya pada standard output.             |
-| __`ping`__  | Memanggil IP Address atau hostname server.                                    |
-| __`which`__ | Menampilkan lokasi file executable (bin).                                     |
-| __`grep`__  | Menemukan file atau standard input berdasarkan PATTERN. Default RegEx (BRE).  |
-| __`sudo`__  | Mengeksekusi perintah sebagai user lain.                                      |
-| __`kill`__  | Menghentikan program yang sedang bekerja (`background process`).              |
+| Keyword | Keterangan |
+|---------|------------|
+| __`ls`__ | Melihat daftar isi suatu directory. |
+| __`mkdir`__ | Membuat directory atau folder. |
+| __`touch`__ | Membuat file. |
+| __`cp`__ | Menggandakan atau menyalin file dan directory |
+| __`mv`__ | Melakukan perubahan nama file atau memindahkan file ke ke lokasi yang berbeda |
+| __`rm`__ | Menghapus file atau folder (`-d`). |
+| __`rmdir`__ | Menghapus directory atau folder. |
+| __`cat`__ | Menggabungkan data files dan menampilkannya pada standard output. |
+| __`ping`__ | Memanggil IP Address atau hostname server. |
+| __`which`__ | Menampilkan lokasi file executable (bin). |
+| __`grep`__ | Menemukan file atau standard input berdasarkan PATTERN. Default RegEx (BRE). |
+| __`sudo`__ | Mengeksekusi perintah sebagai user lain. |
+| __`kill`__ | Menghentikan program yang sedang bekerja (`background process`). |
 
 
 ## 2. Keyboard & Shortcut
@@ -90,11 +90,11 @@ $ pwd
 
 __Schema__
 
-| Path         | Deskripsi                                             |
-|--------------|-------------------------------------------------------|
-| __/__        | directory root                                        |
-| __/etc__     | directory _etc_ yang berada di dalam _root_ directory |
-| __/etc/apt__ | directory _apt_ yang berada di dalam _etc_ directory  |
+| Path | Deskripsi |
+|------|-----------|
+| __/__ | directory root |
+| __/etc__ | directory _etc_ yang berada di dalam _root_ directory |
+| __/etc/apt__ | directory _apt_ yang berada di dalam _etc_ directory |
 
 
 ### 4.2. Relative PATH
