@@ -1,6 +1,6 @@
 # Command Line Interface (CLI)
 
-> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+> Perintah dasar pada terminal (CLI)
 
 
 ## 1. Perintah Dasar Terminal
@@ -45,13 +45,13 @@
 
 | Key            | Keterangan         |
 |:--------------:|--------------------|
-| :arrow_up:     | Lorem ipsum dolor. |
-| :arrow_down:   | Lorem ipsum dolor. |
-| `|` (pipeline) | Lorem ipsum dolor. |
-| `~` (tilde)    | Lorem ipsum dolor. |
-| `ctrl + c`     | Lorem ipsum dolor. |
-| `ctrl + d`     | Lorem ipsum dolor. |
-| `ctrl + z`     | Lorem ipsum dolor. |
+| :arrow_up:     |  |
+| :arrow_down:   |  |
+| `|` (pipeline) |  |
+| `~` (tilde)    |  |
+| `ctrl + c`     |  |
+| `ctrl + d`     |  |
+| `ctrl + z`     |  |
 
 
 ## 3. Implementasi
