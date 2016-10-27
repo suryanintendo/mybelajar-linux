@@ -20,21 +20,154 @@
 
 ### 1.2. Perintah Dasar
 
-| Keyword | Keterangan |
-|---------|------------|
-| __`ls`__ | Melihat daftar isi suatu directory. |
-| __`mkdir`__ | Membuat directory atau folder. |
-| __`touch`__ | Membuat file. |
-| __`cp`__ | Menggandakan atau menyalin file dan directory |
-| __`mv`__ | Melakukan perubahan nama file atau memindahkan file ke ke lokasi yang berbeda |
-| __`rm`__ | Menghapus file atau folder (`-d`). |
-| __`rmdir`__ | Menghapus directory atau folder. |
-| __`cat`__ | Menggabungkan data files dan menampilkannya pada standard output. |
-| __`ping`__ | Memanggil IP Address atau hostname server. |
-| __`which`__ | Menampilkan lokasi file executable (bin). |
-| __`grep`__ | Menemukan file atau standard input berdasarkan PATTERN. Default RegEx (BRE). |
-| __`sudo`__ | Mengeksekusi perintah sebagai user lain. |
-| __`kill`__ | Menghentikan program yang sedang bekerja (`background process`). |
+- #### __`ls`__
+
+    Contoh 1 : Melihat daftar isi directory yang sedang aktif.
+    ``` bash
+    $ ls
+    ```
+
+    Contoh 2 : Melihat daftar isi directory lain.
+    ``` bash
+    $ ls Documents
+    ```
+
+
+- #### __`mkdir`__
+
+    Membuat directory atau folder.
+    ``` bash
+    $ mkdir games
+    ```
+
+    Membuat directory beserta sub-directory.
+    ``` bash
+    $ mkdir -p games/2016/need-4-speed
+    ```
+
+
+- #### __`touch`__
+
+    Membuat file.
+    ``` bash
+    $ touch index.py
+    ```
+
+
+- #### __`cp`__
+
+    Menggandakan atau menyalin file dan directory
+
+    Contoh 1 : Mengcopy file
+    ``` bash
+    $ cp index.py index2.py
+    ```
+
+    Contoh 2 : Mengcopy directory
+    ``` bash
+    $ cp -r music Documents/music
+    ```
+
+
+- #### __`mv`__
+
+    Melakukan perubahan nama file atau memindahkan file ke ke lokasi yang berbeda
+
+    Contoh 1 : Merubah nama file (rename file)
+    ``` bash
+    $ mv app.py index.py
+    ```
+
+    Contoh 2 : Memindahkan folder ke folder lainnya
+    ``` bash
+    $ mv need-4-speed games/2016
+    ```
+
+
+- #### __`rm`__ & __`rmdir`__
+
+    Menghapus file atau directory
+
+    Contoh 1 : Menghapus file.
+    ``` bash
+    $ rm project-1/index.py
+    ```
+
+    Contoh 2 : Menghapus directory.
+    ``` bash
+    $ rm -d project-1
+    ```
+
+    __atau__
+    ``` bash
+    $ rmdir project-1
+    ```
+
+
+- #### __`cat`__
+
+    Menggabungkan data files dan menampilkannya pada standard output.
+    ``` bash
+    $ cat index.py
+    ```
+
+
+- #### __`ping`__
+
+    Memanggil IP Address atau hostname server.
+
+    ``` bash
+    $ ping www.google.com
+    ```
+
+    ``` bash
+    $ ping 192.168.1.1
+    ```
+
+
+- #### __`which`__
+
+    Menampilkan lokasi file executable (bin).
+    ``` bash
+    $ which pwd
+    ```
+
+    ``` bash
+    $ which ls
+    ```
+
+
+- #### __`grep`__
+
+    Menemukan file atau standard input berdasarkan PATTERN. Default RegEx (BRE).
+
+    Contoh
+
+    ``` bash
+    $ cat index.py | grep 'def'
+    ```
+
+
+- #### __`sudo`__
+
+    Mengeksekusi perintah sebagai (super user) atau user lain.
+
+    ``` bash
+    $ sudo apt-get update
+    ```
+
+
+- #### __`kill`__
+
+    Menghentikan program yang sedang bekerja (`background process`).
+
+    `$ kill [PID]`
+
+    Contoh, PID dari Gedit adalah 4112
+
+    ``` bash
+    $ kill 4112
+    ```
 
 
 ## 2. Keyboard & Shortcut
