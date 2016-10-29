@@ -6,3 +6,5 @@
 
 - [Pengantar](/modules/00-pendahuluan.md)
 - [CLI](/modules/01-cli.md)
+- [Repository](/modules/02-cli.md)
+- [User & Group](/modules/03-user-and-group.md)
