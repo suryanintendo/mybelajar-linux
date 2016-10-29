@@ -72,7 +72,7 @@ Group adalah kelompok dari kumpulan dari beberapa user yang terdaftar didalamnya
 
     __Contoh__
     ``` bash
-    $ sudo gpasswd excel marketing
+    $ sudo gpasswd -a excel marketing
     ```
 
 - ### Menghapus group
