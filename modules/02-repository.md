@@ -8,7 +8,7 @@
 - [Ilustrasi](#ilustrasi)
 - [Menambahkan Repository](#menambahkan-repository)
 - [Instalasi Aplikasi Melalui Repository](#instalasi-aplikasi-melalui-repository)
-- [Memperbaharui Repository](#memperbaharui-repository)
+- [Memperbaharui Repository](#memperbaharui-repository-dan-aplikasi)
 - [Menghapus Repository](#menghapus-repository)
 - [Menghapus Aplikasi](#menghapus-aplikasi)
 
