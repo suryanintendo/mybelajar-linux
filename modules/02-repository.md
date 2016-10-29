@@ -14,8 +14,6 @@
 
 ### Ilustrasi
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam maiores nesciunt tenetur tempore, provident quisquam deleniti quod illum perferendis accusamus? Corporis soluta autem animi necessitatibus exercitationem veniam nihil eius dolorum!
-
 
 ### Menambahkan Repository
 
