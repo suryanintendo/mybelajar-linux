@@ -22,19 +22,163 @@
 
 | Keyword | Keterangan |
 |---------|------------|
-| __`ls`__ | Melihat daftar isi suatu directory. |
-| __`mkdir`__ | Membuat directory atau folder. |
-| __`touch`__ | Membuat file. |
-| __`cp`__ | Menggandakan atau menyalin file dan directory |
-| __`mv`__ | Melakukan perubahan nama file atau memindahkan file ke ke lokasi yang berbeda |
-| __`rm`__ | Menghapus file atau folder (`-d`). |
-| __`rmdir`__ | Menghapus directory atau folder. |
-| __`cat`__ | Menggabungkan data files dan menampilkannya pada standard output. |
-| __`ping`__ | Memanggil IP Address atau hostname server. |
-| __`which`__ | Menampilkan lokasi file executable (bin). |
-| __`grep`__ | Menemukan file atau standard input berdasarkan PATTERN. Default RegEx (BRE). |
-| __`sudo`__ | Mengeksekusi perintah sebagai user lain. |
-| __`kill`__ | Menghentikan program yang sedang bekerja (`background process`). |
+| __[`ls`](#ls)__ | Melihat daftar isi suatu directory |
+| __[`mkdir`](#mkdir)__ | Membuat directory |
+| __[`touch`](#touch)__ | Membuat file |
+| __[`cp`](#cp)__ | Menggandakan atau menyalin file dan directory |
+| __[`mv`](#mv)__ | Melakukan perubahan nama file atau memindahkan file ke ke lokasi yang berbeda |
+| __[`rm`](#rm-dan-rmdir)__ | Menghapus file atau directory (`-d`) |
+| __[`rmdir`](#rm-dan-rmdir)__ | Menghapus directory |
+| __[`cat`](#cat)__ | Menggabungkan data files dan menampilkannya pada standard output |
+| __[`ping`](#ping)__ | Memanggil IP Address atau hostname server |
+| __[`which`](#which)__ | Menampilkan lokasi file executable (bin) |
+| __[`grep`](#grep)__ | Menemukan file atau standard input berdasarkan PATTERN. Default RegEx (BRE) |
+| __[`sudo`](#sudo)__ | Mengeksekusi perintah sebagai user lain |
+| __[`kill`](#kill)__ | Menghentikan program yang sedang bekerja (`background process`) |
+
+#### 1.2.1. Bentuk Implementasi
+
+- ##### ls
+
+    Contoh 1 : Melihat daftar isi directory yang sedang aktif.
+    ``` bash
+    $ ls
+    ```
+
+    Contoh 2 : Melihat daftar isi directory lain.
+    ``` bash
+    $ ls Documents
+    ```
+
+- ##### mkdir
+
+    Membuat directory atau folder.
+    ``` bash
+    $ mkdir games
+    ```
+
+    Membuat directory beserta sub-directory.
+    ``` bash
+    $ mkdir -p games/2016/need-4-speed
+    ```
+
+- ##### touch
+
+    Membuat file.
+    ``` bash
+    $ touch index.py
+    ```
+
+- ##### cp
+
+    Menggandakan atau menyalin file dan directory
+
+    Contoh 1 : Mengcopy file
+    ``` bash
+    $ cp index.py index2.py
+    ```
+
+    Contoh 2 : Mengcopy directory
+    ``` bash
+    $ cp -r music Documents/music
+    ```
+
+- ##### mv
+
+    Melakukan perubahan nama file atau memindahkan file ke ke lokasi yang berbeda
+
+    Contoh 1 : Merubah nama file (rename file)
+    ``` bash
+    $ mv app.py index.py
+    ```
+
+    Contoh 2 : Memindahkan folder ke folder lainnya
+    ``` bash
+    $ mv need-4-speed games/2016
+    ```
+
+- ##### rm dan rmdir
+
+    Menghapus file atau directory
+
+    Contoh 1 : Menghapus file.
+    ``` bash
+    $ rm project-1/index.py
+    ```
+
+    Contoh 2 : Menghapus directory.
+    ``` bash
+    $ rm -d project-1
+
+    # atau
+
+    $ rmdir project-1
+    ```
+
+- ##### cat
+
+    Menggabungkan data files dan menampilkannya pada standard output.
+    ``` bash
+    $ cat index.py
+    ```
+
+- ##### ping
+
+    Memanggil IP Address atau hostname server.
+
+    ``` bash
+    $ ping www.google.com
+
+    # atau
+
+    $ ping 192.168.1.1
+    # => PING 192.168.1.1 (192.168.1.1) 56(84) bytes of data.
+    # => 64 bytes from 192.168.1.1: icmp_seq=1 ttl=64 time=1.49 ms
+    # => 64 bytes from 192.168.1.1: icmp_seq=2 ttl=64 time=1.18 ms
+    # => ...
+    ```
+    __Note :__ tekan `ctrl + c` pada keyboard (untuk menghentikan proses)
+
+- ##### which
+
+    Menampilkan lokasi file executable (bin).
+    ``` bash
+    $ which sudo
+    # => /usr/bin/sudo
+
+    $ which apt-get
+    # => /usr/bin/apt-get
+    ```
+
+- ##### grep
+
+    Menemukan file atau standard input berdasarkan PATTERN. Default RegEx (BRE).
+
+    Contoh
+
+    ``` bash
+    $ ls | grep 'project-*'
+    ```
+
+- ##### sudo
+
+    Mengeksekusi perintah sebagai (super user) atau user lain.
+
+    ``` bash
+    $ sudo apt-get update
+    ```
+
+- ##### kill
+
+    Menghentikan program yang sedang bekerja (`background process`).
+
+    `$ kill [PID]`
+
+    Contoh, PID dari Gedit adalah 4112
+
+    ``` bash
+    $ kill 4112
+    ```
 
 
 ## 2. Keyboard & Shortcut
