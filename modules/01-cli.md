@@ -183,15 +183,15 @@
 
 ## 2. Keyboard & Shortcut
 
-| Key            | Keterangan         |
-|:--------------:|--------------------|
-| :arrow_up:     | melihat history perintah yang di akses sebelumnya |
-| :arrow_down:   | `redo` melihat history perintah yang di akses sebelumnya |
+| Key | Keterangan |
+|:---:|------------|
+| :arrow_up: | melihat history perintah yang di akses sebelumnya |
+| :arrow_down: | `redo` melihat history perintah yang di akses sebelumnya |
 | `|` (pipeline) | memisahkan perintah perintah untuk dikombinasikan dengan program lainnya |
-| `~` (tilde)    | alias dari /home/<username> |
-| `ctrl + c`     | membatalkan proses yang sedang berjalan |
-| `ctrl + d`     | Mengirim pesan EOF (End of File) kepada proses yang sedang berlangsung |
-| `ctrl + z`     | melakukan suspend proses yangg sedang berjalan |
+| `~` (tilde) | alias dari /home/<username> |
+| `ctrl + c` | membatalkan proses yang sedang berjalan |
+| `ctrl + d` | Mengirim pesan EOF (End of File) kepada proses yang sedang berlangsung |
+| `ctrl + z` | melakukan suspend proses yangg sedang berjalan |
 
 
 ## 3. Implementasi
