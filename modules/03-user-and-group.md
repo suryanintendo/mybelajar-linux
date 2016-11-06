@@ -49,7 +49,7 @@ __User__ atau __owner__ adalah pengguna yang terdaftar pada sistem operasi yang 
 
 ## Group
 
-Group adalah kelompok dari kumpulan dari beberapa user yang terdaftar didalamnya.
+Group adalah kelompok dari kumpulan beberapa user yang terdaftar didalamnya.
 
 - ### Menambahkan group
 
@@ -63,16 +63,21 @@ Group adalah kelompok dari kumpulan dari beberapa user yang terdaftar didalamnya
     $ sudo groupadd marketing
     ```
 
-- ### Mendaftarkan user ke dalam group
+- ### Mendaftarkan & Menghapus user di group
 
     __Syntax__
     ``` bash
-    $ sudo gpasswd [namauser] [namagroup]
+    $ sudo gpasswd [options] [namauser] [namagroup]
     ```
 
-    __Contoh__
+    __Contoh mendaftarkan user ke group__
     ``` bash
     $ sudo gpasswd -a excel marketing
+    ```
+
+    __Contoh menghapus user dari group__
+    ``` bash
+    $ sudo gpasswd -d excel marketing
     ```
 
 - ### Menghapus group
