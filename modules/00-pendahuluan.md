@@ -17,6 +17,19 @@ Sebelum kita memulai belajar __LINUX__, ada baiknya kita mengenali beberapa isti
 - ### *NIX
 
     Istilah ini akan sering kita jumpai ketika berbicara sistem operasi yang memiliki arsitektur __UNIX__. __Linux__ (__GNU/Linux__) adalah salah satu sistem operasi yang berada pada lingkungan __UNIX__.
+  
+  🖥 Contoh sistem operasi dengan arsitektur UNIX
+    | Kategori | Contoh OS | 
+    |:-----:|:-----:|
+    | __Asli turunan UNIX__ |   Solaris, AIX, HP-UX   | 
+    | __UNIX-like (mirip UNIX)__ |   Linux (Ubuntu, CentOS, Fedora), BSD (FreeBSD, OpenBSD), macOS   | 
+
+    > 🔸 Linux bukan turunan langsung UNIX, tapi sangat mirip dalam arsitekturnya — makanya disebut UNIX-like.
+
+     ❌ UNIX bukan singkatan. Asal-usul nama UNIX berasal dari sebuah "lelucon" internal, di antara para pengembang awalnya di __Bell Labs (tahun 1969)__.
+    Awalnya ada sistem bernama __Multics (Multiplexed Information and Computing Service)__, yaitu sistem operasi besar dan kompleks. Para pengembang di __Bell Labs__ membuat sistem operasi yang lebih sederhana sebagai alternatif dari __Multics__, lalu menamainya:
+"Unics" → dari kata "UNiplexed Information and Computing System"
+Nah, "Unics" ini kemudian berkembang penulisannya jadi UNIX.
 
     Beberapa contoh yang lain dan cukup populer diantaranya adalah __MAC OS X__ keluaran __Apple__, yang juga merupakan OS yang dibangun pada arsitektur __UNIX__.
 
@@ -51,7 +64,7 @@ Sebelum kita memulai belajar __LINUX__, ada baiknya kita mengenali beberapa isti
 
     | Distribusi Debian |
     |:-----------------:|
-    |![Debian Tree](https://upload.wikimedia.org/wikipedia/commons/d/d8/Debian_family_tree_11-06.png)|
+    |![Debian Tree](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)|
     |*sumber: `wikipedia`*|
 
 
