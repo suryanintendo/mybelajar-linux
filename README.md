@@ -10,4 +10,5 @@
 - [User & Group](/modules/03-user-and-group.md)
 
 ## Latihan  (10 sesi)
+- Instal Linux Ubuntu Server 
 - [Your First Linux Lab](modules/Lab1-YourFirstLinuxLab.md)
