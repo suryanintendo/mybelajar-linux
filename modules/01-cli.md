@@ -6,7 +6,9 @@
 ## 1. Perintah Dasar Terminal
 
 ### 1.1. Perintah Informasi
-  
+  <details open>
+ <summary>  isinya </summary>
+<br>
 
 | Huruf | Keyword | Keterangan |
 |:-----:|:-----:|------------|
@@ -17,8 +19,12 @@
 | :heavy_check_mark: | __`id`__ | Menampilkan informasi user dan group. |
 | :heavy_check_mark: | __`fg`__ | (*__Foreground__*), melihat daftar program yang sedang berjalan (__suspended__). |
 | __:heavy_check_mark:__ | __`top`__ | Melihat informasi aplikasi yang sedang berjalan (__Task Manager CLI__).  |
+</details>
 
 ### 1.2. Perintah Dasar
+<details open>
+ <summary>  isinya </summary>
+<br>
 
 | Keyword | Keterangan |
 |---------|------------|
@@ -180,6 +186,7 @@
     $ kill 4112
     ```
 
+</details>
 
 ## 2. Keyboard & Shortcut
 
@@ -268,3 +275,66 @@ Contoh implementasi pada relative path
     $ pwd
     # => /home/guntur/games/need-4-speed
     ```
+## Cek penggunaan Kapasitas Server
+<details open>
+<summary>🔧 1. Cek Penggunaan CPU, RAM, Load Average (Real-Time)</summary>
+<br> 
+ Gunakan top atau htop:  
+    
+      
+    top  
+      
+Menampilkan proses, penggunaan CPU, RAM, dan sistem load secara langsung.  
+
+Untuk keluar: tekan q.
+
+Lebih interaktif:
+```
+sudo apt install htop
+htop
+```
+Tampilannya lebih berwarna dan mudah dibaca.
+</details>  
+<details open>
+<summary>📦 2. Cek Penggunaan Disk (Storage)</summary>
+<br>  
+    
+```
+df -h  
+```
+Menampilkan ukuran, penggunaan, dan sisa ruang tiap partisi dalam format yang mudah dibaca __(-h = human readable)__.
+
+Contoh output:
+```  
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        40G   12G   26G  32% /
+```
+</details>
+<details open>
+<summary>💾 3. Cek Penggunaan RAM dan Swap</summary>
+<br>
+coment linenya  
+    
+```  
+    free -h  
+```  
+Contoh:  
+```  
+    total        used        free      shared  buff/cache   available  
+Mem:           1.9G        900M        500M         40M        550M        1.0G  
+Swap:          1.0G         0B         1.0G
+```
+</details>
+<details open>
+<summary>📊 4. Cek Penggunaan Resource Lain (opsional tapi keren)
+
+</summary>
+<br>
+Install glances:  
+
+```  
+sudo apt install glances
+glances  
+```  
+</details>
+
