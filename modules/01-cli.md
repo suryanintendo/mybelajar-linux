@@ -10,12 +10,12 @@
 
 | Huruf | Keyword | Keterangan |
 |:-----:|:-----:|------------|
-| :o:|   __`pwd`__   | Melihat __Process Working Directory__ saat sekarang.  |
-| :o: |   __`hostname`__   | Melihat hostname / computer name.     |
-| :o: | __`whoami`__ | Menampilkan user ID dan nama user pengguna. |
-| :o: | __`who`__ | Menampilkan informasi user yang telah login. |
-| :o: | __`id`__ | Menampilkan informasi user dan group. |
-| :o: | __`fg`__ | (*__Foreground__*), melihat daftar program yang sedang berjalan (__suspended__). |
+| :heavy_check_mark:|   __`pwd`__   | Melihat __Process Working Directory__ saat sekarang *(Posisi Direktori)*.  |
+| :heavy_check_mark: |   __`hostname`__   | Melihat hostname / computer name.     |
+| :heavy_check_mark: | __`whoami`__ | Menampilkan user ID dan nama user pengguna. |
+| :heavy_check_mark: | __`who`__ | Menampilkan informasi user yang telah login. |
+| :heavy_check_mark: | __`id`__ | Menampilkan informasi user dan group. |
+| :heavy_check_mark: | __`fg`__ | (*__Foreground__*), melihat daftar program yang sedang berjalan (__suspended__). |
 | __:heavy_check_mark:__ | __`top`__ | Melihat informasi aplikasi yang sedang berjalan (__Task Manager CLI__).  |
 
 ### 1.2. Perintah Dasar
