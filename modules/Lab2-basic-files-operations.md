@@ -13,9 +13,14 @@
       `pwd` adalah singkatan dari "print working directory". __Perintah ini menampilkan lokasi Anda saat ini__ dalam sistem berkas.
       Perintah ini penting untuk mengenal struktur berkas Linux.  
       ![informasi lokasi direktori ](images/2pwd.jpg)
-      Perintah `echo` ini akan menampilkan jalur ke direktori home.  
-      Memahami perbedaan antara direktori kerja saat ini dan direktori home. Itu penting untuk menavigasi sistem berkas Linux secara efektif.    
-      ![Tampilan list direktori](images/2cli_ls.jpg)
+      
+    > Memahami perbedaan antara direktori kerja saat ini dan direktori home penting untuk menavigasi sistem berkas Linux secara efektif.
+
+  ![Tampilan list direktori](images/2cli_ls.jpg)  
+    pada direktori ini terdapat 2 folder dan 1 file.  
+    folder file_image  
+    folder HTML  
+    file index.txt  
       
 - [x] 2.2. *Navigating the File System* (Menavigasi Sistem File)
       
