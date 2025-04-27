@@ -1,14 +1,14 @@
 # 2 Basic Files Operations
 
 - [x] 2.1. *Understanding Your Working Environment* (Memahami Lingkungan Kerja Anda) 
-- [x] 2.2. *Navigating the File System* (Menavigasi Sistem File)  
-- [x] 2.3. *Creating Files and Listing Directory Contents* (Membuat File dan Mencantumkan Isi Direktori)  
-- [x] 2.4. *Copying Files and Directories* (Menyalin File dan Direktori)  
-- [x] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
-- [x] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
+- [ ] 2.2. *Navigating the File System* (Menavigasi Sistem File)  
+- [ ] 2.3. *Creating Files and Listing Directory Contents* (Membuat File dan Mencantumkan Isi Direktori)  
+- [ ] 2.4. *Copying Files and Directories* (Menyalin File dan Direktori)  
+- [ ] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
+- [ ] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
 <hr>
 
-- [ ] 2.1 *Understanding Your Working Environment* (Memahami Lingkungan Kerja Anda)  
+- [x] 2.1 *Understanding Your Working Environment* (Memahami Lingkungan Kerja Anda)  
       Di Linux, setiap pengguna biasanya memiliki "direktori `home`," yang dilambangkan dengan `~`.  
       `pwd` adalah singkatan dari "print working directory". __Perintah ini menampilkan lokasi Anda saat ini__ dalam sistem berkas.
       Perintah ini penting untuk mengenal struktur berkas Linux.  
@@ -22,15 +22,15 @@
     folder HTML  
     file index.txt  
       
-- [x] 2.2. *Navigating the File System* (Menavigasi Sistem File)
+- [ ] 2.2. *Navigating the File System* (Menavigasi Sistem File)
       
-- [x] 2.3. *Creating Files and Listing Directory Contents* (Membuat File dan Mencantumkan Isi Direktori)
+- [ ] 2.3. *Creating Files and Listing Directory Contents* (Membuat File dan Mencantumkan Isi Direktori)
       
-- [x] 2.4. *Copying Files and Directories* (Menyalin File dan Direktori)  
+- [ ] 2.4. *Copying Files and Directories* (Menyalin File dan Direktori)  
 
-- [x] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
+- [ ] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
 
-- [x] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
+- [ ] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
 
 
 
