@@ -90,7 +90,24 @@
             `ls testdir_copy`  
 
 - [ ] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
-
+            ![Tampilan list direktori](2Move.jpg)
+     - [x]  1 Rename a file:
+            `mv file1.txt newname.txt`  
+              >  This renames file1.txt to newname.txt.     
+     - [x]  2 Move a file to a directory:
+            `mv newname.txt testdir/`  
+            This moves newname.txt into the testdir directory.  
+     
+     - [x]  3 Rename a directory:
+            `mv testdir_copy new_testdir`  
+            This renames testdir_copy to new_testdir.     
+     - [x]  4 Move and rename in one command:
+            `mv testdir/newname.txt ./original_file1.txt`  
+            This moves newname.txt out of testdir and renames it to original_file1.txt in the current directory.  
+ 
+     - [x]   5 Verify our changes:  
+            `ls`  
+            `ls testdir`  
 - [ ] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
 
 
