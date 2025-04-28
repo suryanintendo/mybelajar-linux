@@ -1,8 +1,8 @@
 # 2 Basic Files Operations
 
 - [x] 2.1. *Understanding Your Working Environment* (Memahami Lingkungan Kerja Anda) 
-- [ ] 2.2. *Navigating the File System* (Menavigasi Sistem File)  
-- [ ] 2.3. *Creating Files and Listing Directory Contents* (Membuat File dan Mencantumkan Isi Direktori)  
+- [x] 2.2. *Navigating the File System* (Menavigasi Sistem File)  
+- [x] 2.3. *Creating Files and Listing Directory Contents* (Membuat File dan Mencantumkan Isi Direktori)  
 - [ ] 2.4. *Copying Files and Directories* (Menyalin File dan Direktori)  
 - [ ] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
 - [ ] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
@@ -13,17 +13,19 @@
              Di Linux, setiap pengguna biasanya memiliki "direktori `home`," yang dilambangkan dengan `~` disebut (tilda).  
      - [x]   `pwd` adalah singkatan dari "print working directory". __Perintah ini menampilkan lokasi Anda saat ini__ dalam sistem berkas.
               Perintah ini penting untuk mengenal struktur berkas Linux.  
-              ![informasi lokasi direktori ](images/2pwd.jpg)  
-          
-      > Memahami perbedaan antara direktori kerja saat ini dan direktori home penting untuk menavigasi sistem berkas Linux secara efektif.
+              ![informasi lokasi direktori ](images/2pwd.jpg)    
+              
+              Memahami perbedaan antara direktori kerja saat ini dan direktori home penting  
+              untuk menavigasi sistem berkas Linux secara efektif.
+             
 
-     - [x]     `ls` atau list untuk menampilkan yang ada pada direktori.
-                ![Tampilan list direktori](images/2cli_ls.jpg)  
+     - [x]     `ls` atau list untuk menampilkan yang ada pada direktori.  
+              ![Tampilan list direktori](images/2cli_ls.jpg)  
                 pada direktori ini terdapat 2 folder dan 1 file.  
                 folder file_image  
                 folder HTML  
                 file index.txt  
-     - [ ]     `ls~` sama dengan `ls $HOME`  
+     - [ ]     perintah `ls ~` sama dengan `ls $HOME`  
            
 
         
@@ -36,11 +38,56 @@
      - [x]     Navigation to home directory
                `cd $HOME` atau `cd ~`untuk shortcut kembali ke home.
      - [x]     Absolute path navigation
-                `cd /home/surya/project1`
+                `cd /home/surya/project1`          
+              ![Tampilan latihan Navigating](images/2navigatingfile.jpg) 
       
-- [ ] 2.3. *Creating Files and Listing Directory Contents* (Membuat File dan Mencantumkan Isi Direktori)
-      
-- [ ] 2.4. *Copying Files and Directories* (Menyalin File dan Direktori)  
+- [x] 2.3. *Creating Files and Listing Directory Contents* (Membuat File dan Mencantumkan Isi Direktori)  
+              ![Tampilan list direktori](images/2creatingfiles.jpg)  
+      Pada latihan disini ada 8 perintah (garis merah).
+
+     - [x] 1   `touch` command usage / perintah `touch`membuat file
+               perintah : `touch file1.txt`  
+     - [x] 2   `echo` command usage for file creation / perintah `echo` membuat file
+          - [x] `echo "Hello, Linux" > file2.txt`  
+              >  penjelasan:  
+              > `echo` is a command that prints text.    
+              > The `>` symbol redirects the output of `echo` into a file named `file2.txt`.  
+              > If the file doesn't exist, it's created. If it does exist, its content is replaced.  
+          - [x] `echo "Hidden file" > .hiddenfile`    
+              >  penjelasan: 
+                This creates a hidden file. In Linux, any file or directory name that starts with a dot (.) is considered hidden.  
+     - [x] 3.   let's create a directory `mkdir` directory creation  
+                `mkdir testdir` 
+     - [x] 4.    Basic listing:  
+                `ls`
+     - [x] 5.    Detailed listing:  
+                `ls -l`    
+     - [x] 6.    Show hidden files:  
+                `ls -a` `ls -la`  listing specific directory
+     - [x] 7.    Combine options:
+                `ls -la`
+     - [x] 8.    List contents of a specific directory:  
+                `ls -l testdir`  
+               pada gambar lokasi kerja ada di `/home/surya/project1`    
+               namun untuk melihat isi dalam folder `tesdir` dapat langsung menambahkan perintah folder tujuan.
+
+- [x] 2.4. *Copying Files and Directories* (Menyalin File dan Direktori)    
+              ![Tampilan list direktori](images/2Copy.jpg)
+
+     - [x] 1 Copy a file:  
+            `cp file1.txt file1_copy.txt`  
+             Ket: This creates a copy of file1.txt named file1_copy.txt in the current directory.
+            `ls` untuk konformasi pengecekan  
+     - [x] 2 Copy a file to another directory:  
+            `cp file2.txt testdir/  
+            Ket: This copies file2.txt into the testdir directory.`
+     - [x] 3 Copy a directory:  
+            `cp -r testdir testdir_copy`  
+            Ket: The -r option stands for "recursive". It's necessary when copying directories to ensure all contents are copied
+     - [x] 4 Verify our copies:  
+            `ls`  
+            `ls testdir`  
+            `ls testdir_copy`  
 
 - [ ] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
 
