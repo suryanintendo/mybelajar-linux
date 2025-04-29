@@ -94,3 +94,19 @@ Only in /home/labex/Desktop: gvim.desktop
 Only in /home/labex/Desktop: xfce4-terminal.desktop
 ```
 This output shows that the Desktop directory contains four files that are not in the Code directory.    
+
+
+<h3> Summary </h3>
+Congratulations! You've completed the File Contents and Comparing lab. Let's recap what you've learned:  
+
+1 You used cat to view the entire contents of a file.  
+2 You learned how to use cat -n to view file contents with line numbers.  
+3 You used head to view the beginning of a file, both by lines and by bytes.  
+4 You used tail to view the end of a file, both by lines and by bytes.  
+5 You learned how to use diff to compare the contents of files.  
+6 Finally, you used diff -r to compare entire directories.  
+These commands are fundamental tools in Linux. As you continue to work with Linux, you'll find yourself using these commands frequently to inspect and compare files and directories.  
+
+Remember, if you ever forget how to use a command, you can always type man followed by the command name (e.g., man cat) to see the manual page for that command. This will give you detailed information about all the options available for each command.  
+
+Keep practicing with these commands on different files and directories to become more comfortable with them. The more you use them, the more natural they'll become!  
