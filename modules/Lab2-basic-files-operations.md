@@ -3,9 +3,9 @@
 - [x] 2.1. *Understanding Your Working Environment* (Memahami Lingkungan Kerja Anda) 
 - [x] 2.2. *Navigating the File System* (Menavigasi Sistem File)  
 - [x] 2.3. *Creating Files and Listing Directory Contents* (Membuat File dan Mencantumkan Isi Direktori)  
-- [ ] 2.4. *Copying Files and Directories* (Menyalin File dan Direktori)  
-- [ ] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
-- [ ] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
+- [x] 2.4. *Copying Files and Directories* (Menyalin File dan Direktori)  
+- [x] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
+- [x] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
 <hr>
 
 - [x] 2.1 *Understanding Your Working Environment* (Memahami Lingkungan Kerja Anda)        
@@ -25,7 +25,7 @@
                 folder file_image  
                 folder HTML  
                 file index.txt  
-     - [ ]     perintah `ls ~` sama dengan `ls $HOME`  
+     - [x]     perintah `ls ~` sama dengan `ls $HOME`  
            
 
         
@@ -89,8 +89,8 @@
             `ls testdir`  
             `ls testdir_copy`  
 
-- [ ] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
-            ![Tampilan list direktori](2Move.jpg)
+- [x] 2.5. *Moving and Renaming Files and Directories* (Memindahkan dan Mengganti Nama File dan Direktori)
+            ![Tampilan list direktori](images/2Move.jpg)
      - [x]  1 Rename a file:
             `mv file1.txt newname.txt`  
               >  This renames file1.txt to newname.txt.     
@@ -108,9 +108,32 @@
      - [x]   5 Verify our changes:  
             `ls`  
             `ls testdir`  
-- [ ] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
-
-
-
-
+- [x] 2.6. *Removing Files and Directories* (Menghapus File dan Direktori)
+            ![Tampilan list direktori](images/2Delete.jpg)
+     - [x]    1 Remove a file:  
+               `rm file1_copy.txt`  
+                This permanently deletes file1_copy.txt.  
+     - [x]    2 Remove an empty directory:  
+                `rmdir new_testdir`  
+                `rmdir` only works on empty directories, and you'll get an error if the directory isn't empty.  
+     
+     - [x]    3 Remove a directory and its contents:  
+                `rm -r testdir`  
+                The -r option is needed to remove directories and their contents recursively.  
+ 
+     - [x]    4 Remove files interactively:  
+                `rm -i file2.txt`  
+                The -i option prompts for confirmation before each removal. Type 'y' and press Enter to confirm deletion.  
+     
+     - [x]    5 Force removal without prompts:  
+                `touch remaining_files`  
+                `ls`  
+                `rm -rf remaining_files`  
+                The -rf combination is very powerful and potentially dangerous. It means:  
+                -r: recursive (for directories)  
+                -f: force (ignore nonexistent files, never prompt)  
+> CAUTION: rm -rf will delete files and directories without asking for confirmation. It can be extremely destructive if used incorrectly. Always double-check your command before using it, especially when using it with wildcards or as a superuser.  
+  - [ ]    6 Verify our removals:
+`ls`
+Remember: In Linux, there's usually no "Recycle Bin" or "Trash" for the command line. When you delete something with rm, it's generally gone for good.
 
