@@ -5,9 +5,9 @@
 - [x] 3. Setting a User Password  
 - [x] 4. Modifying User Properties  
 - [x] 5. Changing User Shell  
-- [ ] 6. Adding a User to a Group  
-- [ ] 7. Locking and Unlocking User Accounts 
-- [ ] 8. Deleting a User  
+- [x] 6. Adding a User to a Group  
+- [x] 7. Locking and Unlocking User Accounts 
+- [X] 8. Deleting a User  
 
 
  Pada praktikum kali ini akan di pandu untuk mempelajari 'dasar manajemen akun pengguna' di sistem lilux. Anda akan belajar membuat, mengubah dan menghapus user akun, serta mengatur dan mengubah katasandi. Ini adalah ketrampilan dasar untuk sistem administrasi linux.
@@ -119,21 +119,132 @@ Mengubah shell joker menjadi bash memberikan beberapa manfaat:
  ![Menambahkan password](images/5changeshell.jpg)  
 
 
-You should see `/bin/bash` at the end of joker's entry. This means bash is now joker's default shell.  
+*You should see `/bin/bash` at the end of joker's entry. This means bash is now joker's default shell.*  
+Anda akan melihat /bin/bash di akhir entri joker. Ini berarti bash sekarang menjadi shell default joker.  
+  
+*After making this change, joker will have access to the more feature-rich bash environment whenever they log in or open a new terminal session.*    
+Setelah melakukan perubahan ini, joker akan memiliki akses ke lingkungan bash yang lebih kaya fitur setiap kali mereka masuk atau membuka sesi terminal baru.
 
-After making this change, joker will have access to the more feature-rich bash environment whenever they log in or open a new terminal session.  
+  - [x] 6. Adding a User to a Group  (menambahkan pengguna ke grup)
+            *In Linux, we use groups to organize users and manage permissions. One important group is the `sudo` group, which gives users administrative privileges. Let's add joker to the `sudo` group as an example.*
+            Di Linux, kita menggunakan grup untuk mengatur pengguna dan mengelola izin. Salah satu grup yang penting adalah grup `sudo`, yang memberikan hak istimewa administratif kepada pengguna. Mari kita tambahkan joker ke grup `sudo` sebagai contoh.  
+        *Why would we add a user to the sudo group?*  
+        Mengapa kita perlu menambahkan pengguna ke grup sudo?  
+        - *System administration: Users in the sudo group can perform system-wide administrative tasks.*  
+          Administrasi sistem: Pengguna dalam grup sudo dapat melakukan tugas administratif di seluruh sistem.  
+        - *Software installation: Sudo group members can install and update software packages.*  
+          Instalasi perangkat lunak: Anggota grup sudo dapat menginstal dan memperbarui paket perangkat lunak.  
+        - *Configuration changes: They can modify system configuration files.*  
+          Perubahan konfigurasi: Mereka dapat mengubah berkas konfigurasi sistem.  
+        - *User management: They can create, modify, or delete other user accounts.*
+          Manajemen pengguna: Mereka dapat membuat, mengubah, atau menghapus akun pengguna lain.  
+        ----------------------  
+        ----------------------  
+        *You might wonder: "Why add someone to the sudo group when we can always use the 'sudo' command?" Here's why:*  
+        Anda mungkin bertanya tanya: "Mengapa menambahkan seseorang ke grup sudo jika kita selalu dapat menggunakan perintah 'sudo'?" Berikut alasannya:
+        - *Convenience: Users in the sudo group can use sudo without needing to know the root password. They use their own password instead.*        
+        Kenyamanan: Pengguna dalam grup sudo dapat menggunakan sudo tanpa perlu mengetahui kata sandi root. Mereka menggunakan kata sandi mereka sendiri.  
+        - *Granular control: System administrators can configure sudo to allow specific users to run only certain commands with superuser privileges.*  
+        Kontrol terperinci: Administrator sistem dapat mengonfigurasi sudo untuk mengizinkan pengguna tertentu menjalankan perintah tertentu saja dengan hak istimewa superuser.  
+        - *Accountability: Unlike sharing the root password, sudo logs who ran what command, improving security and traceability.*
+        Akuntabilitas: Tidak seperti berbagi kata sandi root, sudo mencatat siapa yang menjalankan perintah apa, sehingga meningkatkan keamanan dan keterlacakan.  
+        - *Security: It's generally more secure to have named accounts with sudo access than to share the root password among multiple admins.*
+        Keamanan: Secara umum lebih aman untuk memiliki akun bernama dengan akses sudo daripada berbagi kata sandi root di antara beberapa admin.
+          
+    *In a real-world scenario, you would typically add a user to the sudo group if:*
+    Dalam skenario dunia nyata, Anda biasanya akan menambahkan pengguna ke grup sudo jika:  
 
-  - [ ] 6. Adding a User to a Group
+    - *They are a system administrator or IT staff member who needs to perform regular maintenance tasks.  
+       Mereka adalah administrator sistem atau anggota staf TI yang perlu melakukan tugas pemeliharaan rutin.  
+    - *They are a developer who needs to install specific software or make system changes for their work.  
+        Mereka adalah pengembang yang perlu memasang perangkat lunak tertentu atau membuat perubahan sistem untuk pekerjaan mereka.  
+    - *They are a power user who needs elevated privileges for certain tasks, but you don't want to give them the root password.
+      Mereka adalah pengguna ahli yang memerlukan hak istimewa lebih tinggi untuk tugas tertentu, tetapi Anda tidak ingin memberi mereka kata sandi root.
 
-  - [ ] 7. Locking and Unlocking User Accounts
-  - [ ] 8. Deleting a User (menghapus user)       
-  - [ ]   Summary
-Congratulations! You've completed the Linux User Account Management lab. You've learned how to:
+  >>  Remember, adding a user to the `sudo` group gives them significant power over the system, so this should be done cautiously and only when necessary.  
+  >>  Ingat, menambahkan pengguna ke grup `sudo` memberi mereka kekuasaan yang signifikan atas sistem, jadi ini harus dilakukan dengan hati-hati dan hanya jika diperlukan.   
+   -  Now, let's add joker to the sudo group:  
+      Sekarang, mari tambahkan joker ke grup sudo:  
+       ```
+       sudo usermod -aG sudo joker
+       ```  
+      Keterangan nya   
+      Here's what this does:  
+    `usermod` is the command to modify user accounts  
+    `-aG` means "append to Group" (add to a group without removing from other groups)  
+    `sudo` is the group we're adding the user to  
+    `joker` is the user we're modifying  
+  
+   -  *Verify the change:*
+       memferifikasi perubahannya:
+       ```
+       groups joker
+       ```
+       Anda seharusnya melihat `sudo` tercantum di antara grup `joker`.
+        
+   -  *To see the effect of this change, we need to switch to the joker user and try a command that requires sudo privileges:*
+      Untuk melihat efek perubahan ini, kita perlu beralih ke pengguna joker dan mencoba perintah yang memerlukan hak istimewa sudo:  
+       ```
+       su - joker
+       ```
+       ![Ganti User](images/5pindahuser.jpg)  
+       *This command switches from your current user (`surya`) to the `joker` user. You will be prompted to enter joker's password. Remember, this is the password you set earlier (password123). As you type the password, you won't see any characters on the screen - this is a security feature.*  
+       Perintah ini akan mengubah pengguna Anda saat ini (`surya`) menjadi pengguna `joker`. Anda akan diminta memasukkan kata sandi joker. Ingat, ini adalah kata sandi yang Anda tetapkan sebelumnya (password123). Saat Anda mengetik kata sandi, Anda tidak akan melihat karakter apa pun di layar - ini adalah fitur keamanan.
+   -  *Once logged in as joker, let's try to view a file that normally requires root privileges:*
+       Setelah masuk sebagai joker, mari kita coba melihat file yang biasanya memerlukan hak akses root:
+      
+      ```
+      sudo cat /etc/shadow
+      ```
+      Enter joker's password again when prompted. You should be able to see the contents of the /etc/shadow file, which is usually only accessible to root. This confirms that joker now has sudo privileges.  
+      Masukkan kembali kata sandi joker saat diminta. Anda seharusnya dapat melihat isi berkas /etc/shadow, yang biasanya hanya dapat diakses oleh root. Ini mengonfirmasi bahwa joker sekarang memiliki hak akses sudo.  
+        
+   -  *After you're done, type exit to return to your original user account (labex).*  
+      Setelah selesai, ketik exit untuk kembali ke akun pengguna asli Anda (labex).  
+      ![Kembali ke akun utama](images/5exit.jpg)   
+Note: In a production environment, you should be very careful about who you add to the sudo group. With great power comes great responsibility!  
+Catatan: Dalam lingkungan produksi, Anda harus sangat berhati-hati tentang siapa yang Anda tambahkan ke grup sudo. Dengan kekuatan besar datanglah tanggung jawab besar!  
+        
+  - [x] 7. Locking and Unlocking User Accounts.
+        Sometimes, you might need to temporarily disable a user account without deleting it.
+   -  *Lock the joker account:* mengunci akun `joker`  
+    ``` sudo passwd -l joker```
+    *The `-l` option locks the password.*  opsi `-l` mengunci password.  
+    __`-l` untuk Lock__  
+    *You'll be asked for a password. Enter the password you set for joker earlier ("password123" if you followed our suggestion).*  
+    Anda akan dimintai kata sandi. Masukkan kata sandi yang Anda tetapkan untuk joker sebelumnya ("password123" jika Anda mengikuti saran kami).  
+    *You should see an "authentication failure" message. This means the account is successfully locked.*  
+    Anda akan melihat pesan "authentication failure". Ini berarti akun berhasil dikunci.  
+      ![Kembali ke akun utama](images/5lockunlock.jpg)  
+   -  *unlock the account:* membuka kunci akun:  
+        ```sudo passwd -u joker```  
+      The -u option unlocks the password.  
+   -  Coba ke akun `joker` lagi  
+        ``` su - joker```  
+          *Enter the password when prompted. This time, you should be able to switch to the joker user successfully.*  
+          Masukkan kata sandi saat diminta. Kali ini, Anda seharusnya berhasil beralih ke pengguna joker.  
+          *Type exit to return to your original user account before continuing to the next step.*  
+          Ketik exit untuk kembali ke akun pengguna asli Anda sebelum melanjutkan ke langkah berikutnya.  
+  - [x] 8. Deleting a User (menghapus user)  
+        - Proses Menghapus  
+            ```sudo userdel -r bob```  
+            *The `userdel` command deletes user accounts. The `-r` option removes the user's home directory and mail spool.*  
+            Perintah `userdel` menghapus akun pengguna. Opsi `-r` menghapus direktori home dan mail spool pengguna.  
+        - Verifikasi  
+            ```sudo grep -w 'bob' /etc/passwd
+               sudo ls -ld /home/bob
+            ```  
+            Both commands should return no results. This means the user and their home directory have been successfully removed.  
+        
+  - [x]   Summary
+Congratulations! You've completed the Linux User Account Management lab. You've learned how to:  
 
-Create new user accounts
-Set user passwords
-Modify user properties like home directory and default shell
-Add users to groups
-Lock and unlock user accounts
-Delete user accounts
-You've also been introduced to important Linux concepts like the /etc/passwd file, home directories, shells, and user groups. These are fundamental skills for Linux system administration. Remember, in real-world scenarios, always follow your organization's security policies when managing user accounts
+1. Create new user accounts  
+2. Set user passwords  
+3. Modify user properties like home directory and default shell   
+4. Add users to groups  
+5. Lock and unlock user accounts  
+6. Delete user accounts  
+You've also been introduced to important Linux concepts like the `/etc/passwd` file, home directories, shells, and user groups.
+These are fundamental skills for Linux system administration.
+Remember, in real-world scenarios, always follow your organization's security policies when managing user accounts  
